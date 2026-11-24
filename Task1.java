@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Task1 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -8,8 +7,7 @@ public class Task1 {
         int[] a=new int[n];
         for (int i=0; i<n; i++) {
             System.out.print("a["+i+"]: ");
-            a[i]=sc.nextInt();
-        }
+            a[i]=sc.nextInt();}
         int left=0;
         int right=n-1;
         System.out.print("Результат: ");
@@ -18,7 +16,6 @@ public class Task1 {
                 System.out.print(a[left]);
             } else {
                 System.out.print(a[left]+" "+a[right]+" ");
-            }
             left++;
             right--;
         }
