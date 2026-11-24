@@ -9,11 +9,9 @@ public class Task5 {
             if (choice==1) {
                 input(sc, params);
                 if (check(params)) {double e=calculate(params);output(e);
-                } else { System.out.println("Ошибка"); }} else if (choice==4) { System.out.println("Выход"); }}
-    }
+                } else { System.out.println("Ошибка"); }} else if (choice==4) { System.out.println("Выход"); }}}
     static void input(Scanner sc, double[] p) {
-        p[0]=sc.nextDouble(); p[1]=sc.nextDouble();
-    }
+        p[0]=sc.nextDouble(); p[1]=sc.nextDouble();}
     static boolean check(double[] p) {
         if (p[0]<=0 || p[1]<0) return false;
         return true;}
